@@ -2,6 +2,6 @@
 
 Repositório relacionado a formação de Power BI Analyst
 
-## Pasta Desafio-DIO
+## Desafio-DIO
 
-  **- Analisando dados de um Dashboard de Vendas no Power BI**
+  **- Analisando dados de um Dashboard de Vendas no Power BI:** Criação da terceira página do relatório com dados de vendas oferecidas na sample padrão do Power BI. 
