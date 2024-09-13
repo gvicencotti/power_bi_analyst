@@ -17,7 +17,7 @@ insert into dependent values (333445555, 'Alice', 'F', '1986-04-05', 'Daughter')
                              (123456789, 'Alice', 'F', '1988-12-30', 'Daughter'),
                              (123456789, 'Elizabeth', 'F', '1967-05-05', 'Spouse');
 
-insert into departament values ('Research', 5, 333445555, '1988-05-22','1986-05-22'),
+insert into department values ('Research', 5, 333445555, '1988-05-22','1986-05-22'),
 							   ('Administration', 4, 987654321, '1995-01-01','1994-01-01'),
                                ('Headquarters', 1, 888665555,'1981-06-19','1980-06-19');
 
@@ -61,10 +61,10 @@ select * from dependent;
 SELECT Bdate, Address FROM employee
 WHERE Fname = 'John' AND Minit = 'B' AND Lname = 'Smith';
 
-select * from departament where Dname = 'Research';
+select * from department where Dname = 'Research';
 
 SELECT Fname, Lname, Address
-FROM employee, departament
+FROM employee, department
 WHERE Dname = 'Research' AND Dnumber = Dno;
 
 select * from project;
@@ -74,20 +74,20 @@ select * from project;
 -- Expressões e concatenação de strings
 --
 --
--- recuperando informações dos departamentos presentes em Stafford
-select Dname as Department, Mgr_ssn as Manager from departament d, dept_locations l
+-- recuperando informações dos departmentos presentes em Stafford
+select Dname as Department, Mgr_ssn as Manager from department d, dept_locations l
 where d.Dnumber = l.Dnumber;
 
 -- padrão sql -> || no MySQL usa a função concat()
-select Dname as Department, concat(Fname, ' ', Lname) from departament d, dept_locations l, employee e
+select Dname as Department, concat(Fname, ' ', Lname) from department d, dept_locations l, employee e
 where d.Dnumber = l.Dnumber and Mgr_ssn = e.Ssn;
 
 -- recuperando info dos projetos em Stafford
-select * from project, departament where Dnum = Dnumber and Plocation = 'Stafford';
+select * from project, department where Dnum = Dnumber and Plocation = 'Stafford';
 
--- recuperando info sobre os departamentos e projetos localizados em Stafford
+-- recuperando info sobre os departmentos e projetos localizados em Stafford
 SELECT Pnumber, Dnum, Lname, Address, Bdate
-FROM project, departament, employee
+FROM project, department, employee
 WHERE Dnum = Dnumber AND Mgr_ssn = Ssn AND
 Plocation = 'Stafford';
 
@@ -123,14 +123,14 @@ select e.Fname, e.Lname, 1.1*e.Salary as increased_sal from employee as e,
 works_on as w, project as p where e.Ssn = w.Essn and w.Pno = p.Pnumber and p.Pname='ProductX';
 
 -- concatenando e fornecendo alias
-select Dname as Department, concat(Fname, ' ', Lname) as Manager from departament d, dept_locations l, employee e
+select Dname as Department, concat(Fname, ' ', Lname) as Manager from department d, dept_locations l, employee e
 where d.Dnumber = l.Dnumber and Mgr_ssn = e.Ssn;
 
--- recuperando dados dos empregados que trabalham para o departamento de pesquisa
-select Fname, Lname, Address from employee, departament
+-- recuperando dados dos empregados que trabalham para o departmento de pesquisa
+select Fname, Lname, Address from employee, department
 	where Dname = 'Research' and Dnumber = Dno;
 
 -- definindo alias para legibilidade da consulta
-select e.Fname, e.Lname, e.Address from employee e, departament d
+select e.Fname, e.Lname, e.Address from employee e, department d
 	where d.Dname = 'Research' and d.Dnumber = e.Dno;
 

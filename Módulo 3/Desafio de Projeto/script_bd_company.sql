@@ -32,7 +32,7 @@ alter table employee modify Dno int not null default 1;
 
 desc employee;
 
-create table departament(
+create table department(
 	Dname varchar(15) not null,
     Dnumber int not null,
     Mgr_ssn char(9) not null,
@@ -46,12 +46,12 @@ create table departament(
 
 -- 'def', 'company_constraints', 'departament_ibfk_1', 'company_constraints', 'departament', 'FOREIGN KEY', 'YES'
 -- modificar uma constraint: drop e add
-alter table departament drop  departament_ibfk_1;
-alter table departament 
+alter table department drop  departament_ibfk_1;
+alter table department 
 		add constraint fk_dept foreign key(Mgr_ssn) references employee(Ssn)
         on update cascade;
 
-desc departament;
+desc department;
 
 create table dept_locations(
 	Dnumber int not null,
