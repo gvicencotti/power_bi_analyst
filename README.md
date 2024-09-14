@@ -63,5 +63,5 @@ Criando um Dashboard Corporativo com Integração com MySQL e Azure
 
 
 ## Criando Star Schema com Universidade
-Este projeto modela um Data Warehouse focado na análise de dados sobre professores, cursos, disciplinas, departamentos e datas. Ele foi desenvolvido para entrega de projeto do desafio proposto pela DIO.
+Este projeto modela um Data Warehouse focado na análise de dados sobre professores, cursos, disciplinas, departamentos e datas. Foi desenvolvido como parte de um desafio proposto pelo DIO, cujo objetivo é transformar a modelagem inicial em um Star Schema. O modelo permite análises detalhadas da carga horária ministrada, dos cursos e das disciplinas ministradas, além de oferecer uma visão completa das dimensões relacionadas aos professores e suas atividades acadêmicas.
 
