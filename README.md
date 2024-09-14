@@ -1,8 +1,10 @@
 ### Power BI Analyst
 Repositório relacionado à formação de Power BI Analyst.
 
+
 ## Desafio-DIO - NTT DATA DATA ENGINEER BOOT CAMP
 Este repositório contém soluções para desafios propostos no boot camp de Data Engineer da NTT Data. Abaixo estão os detalhes dos projetos:
+
 
 ## Analisando Dados de um Dashboard de Vendas no Power BI
 
@@ -10,6 +12,7 @@ Este repositório contém soluções para desafios propostos no boot camp de Dat
 
 **Financial Project:** Criação do Financial Report - amostra fornecida pelo próprio aplicativo, com funcionalidades mais interativas, como botões e filtros.
 Criando um Dashboard Corporativo com Integração com MySQL e Azure
+
 
 ## Criando um Dashboard corporativo com integração com MySQL e Azure
 
@@ -57,3 +60,8 @@ Criando um Dashboard Corporativo com Integração com MySQL e Azure
 ⦁ Agrupe os dados a fim de saber quantos colaboradores existem por gerente ✅
 
 ⦁ Elimine as colunas desnecessárias, que não serão usadas no relatório, de cada tabela ✅
+
+
+## Criando Star Schema com Universidade
+Este projeto modela um Data Warehouse focado na análise de dados sobre professores, cursos, disciplinas, departamentos e datas. Ele foi desenvolvido para entrega de projeto do desafio proposto pela DIO.
+
