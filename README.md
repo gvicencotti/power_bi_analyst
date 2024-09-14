@@ -11,7 +11,7 @@ Este repositório contém soluções para desafios propostos no boot camp de Dat
 **Financial Project:** Criação do Financial Report - amostra fornecida pelo próprio aplicativo, com funcionalidades mais interativas, como botões e filtros.
 Criando um Dashboard Corporativo com Integração com MySQL e Azure
 
-## Azure_Company
+## Criando um Dashboard corporativo com integração com MySQL e Azure
 
 **Checklist do que foi cumprido no desafio:**
 
