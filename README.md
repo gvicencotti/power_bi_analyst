@@ -65,3 +65,15 @@ Criando um Dashboard Corporativo com Integração com MySQL e Azure
 ## Criando Star Schema com Universidade
 Este projeto modela um Data Warehouse focado na análise de dados sobre professores, cursos, disciplinas, departamentos e datas. Foi desenvolvido como parte de um desafio proposto pelo DIO, cujo objetivo é transformar a modelagem inicial em um Star Schema. O modelo permite análises detalhadas da carga horária ministrada, dos cursos e das disciplinas ministradas, além de oferecer uma visão completa das dimensões relacionadas aos professores e suas atividades acadêmicas.
 
+## Modelagem e Transformação de dados com DAX Power BI
+O intuito desse projeto era aplicar os princípios da modelagem de dados utilizando a abordagem de Star Schema no Power BI. A base de dados financeiros (Financial Sample) foi convertida em um modelo de dados, com a criação de tabelas fato e dimensão que tornam a análise de vendas e desempenho mais eficiente, organizadas de maneira a aprimorar consultas e visualizações.
+
+- D_Products: Inclui dados agrupados sobre os produtos, como médias e limites de vendas. ✅
+- D_Products_Details: Contém dados adicionais sobre os produtos, como faixa de desconto (Discount Band), preço de venda (Sale Price) e custo de produção (Manufacturing Price). ✅
+- D_Discounts: Relação que correlaciona o ID do Produto com as informações dos descontos oferecidos. ✅
+- D_Calendar: Criada utilizando a função CALENDARAUTO() no DAX, com a finalidade de fornecer informações temporais, como datas, meses e anos. ✅
+- F_Sales: A planilha que guarda todas as informações detalhadas sobre as transações realizadas, como volume de vendas, valor de venda, segmento de atuação, localização, lucratividade e data. ✅
+
+**Funções DAX utilizadas**
+- CALENDARAUTO()
+- CompositeKey_Product_Country_Date_SalePrice_UnitsSold = [Product] & "-" & [Country] & "-" & FORMAT([Date], "YYYYMMDD") & "-" & [Sale Price] & "-" & [Units Sold]
