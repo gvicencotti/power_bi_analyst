@@ -77,3 +77,11 @@ O intuito desse projeto era aplicar os princípios da modelagem de dados utiliza
 **Funções DAX utilizadas**
 - CALENDARAUTO()
 - CompositeKey_Product_Country_Date_SalePrice_UnitsSold = [Product] & "-" & [Country] & "-" & FORMAT([Date], "YYYYMMDD") & "-" & [Sale Price] & "-" & [Units Sold]
+
+## Criando um Dashboard Gerencial para Tomada de Decisões Com Power BI
+Alteração do relatório inicial de financial para uma versão mais funcional e detalhada, com o objetivo de melhorar a experiência do usuário.
+
+**Página 1 - Sales Reports:** Detalhes referente as vendas da empresa, com filtros de datas e possibilidade de verificação por produtos e segmento.
+**Página 2 - Profit:** Análise do lucro da empresa, com possibilidades de identificar vários detlahes do lucro, cálculo do lucro bruto, filtro de datas, e diversos tipos de verificações.
+**Página 3 - Production Costs:** Valores de manufatura, comparativo com o preço de vendas e destaque para os custos por produto vendido.
+
