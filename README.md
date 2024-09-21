@@ -87,3 +87,14 @@ Alteração do relatório inicial de financial para uma versão mais funcional e
 
 **Página 3 - Production Costs:** Valores de manufatura, comparativo com o preço de vendas e destaque para os custos por produto vendido.
 
+## Criando um Relatório Vendas e Lucros com Data Analytics com Power BI
+Desafio de projeto final DIO
+
+**Homepage:** Página inicial do report financeiro
+
+**Página Relatório de Vendas:** Relatório de vendas com gráfico de venda por período, produto, localização, com filtro de datas.
+
+**Página Detalhes:** Detalhes das vendas, com gráfico de barras de vendas por mês e gráfico de barras empilhadas de vendas por semestre, tabelas com vendas por trimestre, histograma de unidades vendidas e gráfico de barras de produtos vendidos.
+
+**Página Detalhes de Vendas - TOP:** Detalhes das vendas, com cartão que mostra o máximo de produtos vendidos, indicando o segmento e o máximo de vendas por mês, gráfico de doughnut com os top 3 países com mais vendas, e os top 5 meses de venda e lucro. Também há um gráfico de barras com os top 3 produtos vendidos e os top 3 produtos por país. Por fim, um gráfico de dispersão com a soma de vendas, unidades e soma de lucros por produtos e mês.
+
